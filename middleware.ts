@@ -19,7 +19,7 @@ export default clerkMiddleware((auth, request) => {
     return NextResponse.redirect(orgSelection);
   }
   // if (!auth().userId && !isPublicRoute(request)) {
-  //   auth().protect();
+  //   return auth().protect();
   // }
 
   if (
